@@ -1,6 +1,7 @@
 package Main.Calculo;
 
 public class Mensalidade_Sexo_M {
+    
     public static double calcularMensalidade_Sexo_M(int idade, String sexo) {
         double mensalidade;
 
