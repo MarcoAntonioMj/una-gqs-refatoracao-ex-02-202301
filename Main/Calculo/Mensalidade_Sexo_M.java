@@ -11,12 +11,14 @@ public class Mensalidade_Sexo_M {
                 setMensalidade(60.0);
             } else if (idade <= 18) {
                 setMensalidade(75.0);
-            } else if (idade <= 25) {
+            } else if (idade <= 30) {
                 setMensalidade(90.0);
             } else if (idade <= 40) {
                 setMensalidade(85.0);
+            } else if (idade <= 50) {
+                setMensalidade(80.0);
             } else {
-                setMensalidade(800.0);
+                setMensalidade(60.0);
             }
         } else {
             System.out.println("Sexo inválido.");

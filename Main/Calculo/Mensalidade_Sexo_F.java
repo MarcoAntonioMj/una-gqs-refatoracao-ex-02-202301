@@ -6,16 +6,16 @@ public class Mensalidade_Sexo_F {
 
     public static double calcularMensalidade_Sexo_F(int idade, String sexo) {
         if (sexo.equalsIgnoreCase("F")) {
-            if (idade <= 15) {
+            if (idade <= 18) {
                 setMensalidade(60.0);
-            } else if (idade <= 18) {
-                setMensalidade(60.0);
-            } else if (idade <= 30) {
+            } else if (idade <= 25) {
                 setMensalidade(90.0);
             } else if (idade <= 40) {
-                setMensalidade(90.0);
+                setMensalidade(85.0);
+            } else if (idade <= 50) {
+                setMensalidade(65.0);
             } else {
-                setMensalidade(90.0);
+                setMensalidade(50.0);
             }
         } else {
             System.out.println("Sexo inválido.");
