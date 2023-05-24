@@ -1,27 +1,38 @@
 package Main.Calculo;
 
 public class Mensalidade_Sexo_M {
-    
+    private static double mensalidade;
+
+
     public static double calcularMensalidade_Sexo_M(int idade, String sexo) {
-        double mensalidade;
 
         if (sexo.equalsIgnoreCase("M")) {
             if (idade <= 15) {
-                mensalidade = 60.0;
+                setMensalidade(60.0);
             } else if (idade <= 18) {
-                mensalidade = 75.0;
+                setMensalidade(75.0);
             } else if (idade <= 25) {
-                mensalidade = 90.0;
+                setMensalidade(90.0);
             } else if (idade <= 40) {
-                mensalidade = 85.0;
+                setMensalidade(85.0);
             } else {
-                mensalidade = 800.0;
+                setMensalidade(800.0);
             }
         } else {
             System.out.println("Sexo inválido.");
-            mensalidade = 0.0;
+            setMensalidade(0.0);
         }
 
+        return getMensalidade();
+    }
+
+
+    public static double getMensalidade() {
         return mensalidade;
+    }
+
+
+    public static void setMensalidade(double mensalidade) {
+        Mensalidade_Sexo_M.mensalidade = mensalidade;
     }
 }
